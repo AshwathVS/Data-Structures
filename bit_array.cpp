@@ -64,7 +64,8 @@ class BitArray {
             if (value) {
                 _bitArray[divide] |= (tmp << modulo);
             } else {
-                _bitArray[divide] -= (tmp << modulo);
+                int a = ~0;                
+                _bitArray[divide] &= (a - (tmp << modulo));
             }
 
         }
