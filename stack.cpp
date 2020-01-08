@@ -51,7 +51,6 @@ class Stack
 {
     int itemCount = 0;
     Node *top = nullptr;
-    Node *tail = nullptr;
 
 public:
     int push(int data)
