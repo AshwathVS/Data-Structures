@@ -19,7 +19,7 @@ class UnrolledLinkedList<T> {
     }
 
     public void remove(int index) {
-        
+
     }
 
     public void remove(T data) {
@@ -46,6 +46,12 @@ class UnrolledLinkedList<T> {
         private int countOfElements;
         private T[] arr;
         private Node<T> next;
+
+        public Node(int arrSize, Node<T> next) {
+            this.arr = (T[]) new Object[arrSize];
+            this.next = next;
+            this.countOfElements = 0;
+        }
 
         public int getCountOfElements() {
             return countOfElements;
