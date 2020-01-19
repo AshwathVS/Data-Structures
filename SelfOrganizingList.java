@@ -152,6 +152,8 @@ class SelfOrganizingList<T> {
     public boolean equals(T source, T target) {
         if (source != null && target != null) {
             return source.equals(target);
+        } else if (source == null && target == null) {
+            return true;
         } else {
             return false;
         }
